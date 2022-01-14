@@ -28,13 +28,14 @@ def testar_my_demo_app():
             caps)
 
 
-    else:
+    else:   # configurações locais
         caps = {
             "platformName": "Android",
             "appium:platformVersion": "9.0",
-            "appium:deviceName": "Samsung Galaxy S9 FHD GoogleAPI Emulator",
+            "appium:appiumVersion": "1.22.0",
+            "appium:automationName": "uiautomator2",
+            "appium:deviceName": "emulator5554",
             "appium:deviceOrientation": "portrait",
-            "appium:app": "storage:filename=mda-1.0.9-11.apk",
             "appium:appPackage": "com.saucelabs.mydemoapp.android",
             "appium:appActivity": "com.saucelabs.mydemoapp.android.view.activities.SplashActivity"
         }
